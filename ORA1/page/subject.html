@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .w3-bar-item.active {
+            background-color: #1c7920;
+            /* Màu nền đậm hơn */
+            color: white;
+            /* Màu chữ sáng hơn */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+                href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="/ORA1/main.html" class="w3-bar-item w3-button w3-theme-l1">
+                <img src="/ORA1/assets/logo.png" alt="Logo" style="height:25px;">
+            </a>
+            <a href="/ORA1/page/subject.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white active">Thông
+                tin môn
+                học</a>
+            <a href="/ORA1/page/tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ
+                Web</a>
+            <a href="/ORA1/page/cv.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh
+                viên</a>
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#info">Thông tin môn học</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#semina">Tóm tắt học phần</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#recruitment">Bài giảng</a>
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64" id="info">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Thông tin môn học</h1>
+                <div class="w3-row-padding">
+                    <!-- Cột 1 -->
+                    <div class="w3-half w3-container">
+                        <p><b>Đơn vị:</b> Trường Công nghệ Thông tin và Truyền thông</p>
+                        <p><b>Tên học phần:</b> Công nghệ Web và dịch vụ trực tuyến</p>
+                        <p><b>Tên Tiếng Anh:</b> Web technologies and e-Services</p>
+                        <p><b>Mã học phần:</b> IT4409</p>
+                        <p><b>Đơn vị con:</b> Không</p>
+                        <p><b>Ngành đào tạo:</b> CNTT Việt Nhật</p>
+                        <p><b>Hệ đào tạo:</b> Thạc sỹ Khoa học, Kỹ sư chính quy, Cử nhân, Việt-Nhật</p>
+                        <p><b>Loại hình:</b> Lớp</p>
+                        <p><b>Nhóm chuyên môn:</b> Phạm Huy Hoàng</p>
+                        <p><b>Điều phối viên:</b> Phạm Huy Hoàng</p>
+                        <p><b>HP liên quan:</b> Không</p>
+                        <p><b>Hình thức thi cuối kì:</b> Thi trên máy tính</p>
+                    </div>
+
+                    <!-- Cột 2 -->
+                    <div class="w3-half w3-container">
+                        <p><b>Số tín chỉ:</b> 3</p>
+                        <p><b>Số giờ BT:</b> 2</p>
+                        <p><b>Số giờ tự học:</b> 6</p>
+                        <p><b>kHD Thực tập:</b> 0</p>
+                        <p><b>kHD Đồ án:</b> 0</p>
+                        <p><b>Hệ số điểm thực hành:</b> 0</p>
+                        <p><b>Số giờ LT:</b> 2</p>
+                        <p><b>Số giờ TN/TH:</b> 0</p>
+                        <p><b>Số giờ Thực tập:</b> 0</p>
+                        <p><b>kHD Thực tập kỳ hè:</b> 0</p>
+                        <p><b>Phân bố:</b> 3(2-2-0-6)</p>
+                        <p><b></b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://tailieuhust.com/cong-nghe-web-va-dich-vu-truc-tuyen/">
+                    <img src="/ORA1/assets/web.png" alt="AD" class="w3-padding-large" style="width:100%; height:auto;">
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row" id="semina">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Tóm tắt học phần</h1>
+                <div class="experience-entry">
+                    <div class="w3-row experience">
+                        <div class="w3-col s12 m3 l3 date">
+                            <p><br>
+                                <strong>Mô tả tóm tắt học phần (tiếng Việt)</strong><br>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 m9 l9 content">
+                            <p>- Mục tiêu: Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển các ứng
+                                dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên
+                                có khả năng:</p>
+                            <ul>
+                                <li>Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho
+                                    các lĩnh vực khác nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay
+                                    các ứng dụng điện tử (eCommerce, eLearning, eGoverment,…)</li>
+                                <li>Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</li>
+                            </ul>
+                            <p>- Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình
+                                và thái độ cần thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về
+                                phần mềm sau này.</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-row experience">
+                        <div class="w3-col s12 m3 l3 date">
+                            <p><br>
+                                <strong>Mô tả tóm tắt học phần (tiếng Anh)</strong><br>
+                            </p>
+                        </div>
+                        <div class="w3-col s12 m9 l9 content">
+                            <p>- Objectives: The course provides students with the necessary knowledge to build and
+                                develop online applications and services on the web environment. After completing this
+                                couse, students are able to:</p>
+                            <ul>
+                                <li>Use a programming language such as JSP, PHP to develop web applications for
+                                    different areas such as content management system (CMS), portal, or online
+                                    applications (eCommerce, eLearning, eGoverment, ...)</li>
+                                <li>Understand the popular web technologies, platforms, frameworks.</li>
+                            </ul>
+                            <p>- In addition, the course also provides students with skills of teamwork and
+                                presentation, and attitudes needed to work and apply the techniques in software projects
+                                and companies in the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://www.w3schools.com/whatis/">
+                    <img src="/ORA1/assets/web2.jpg" alt="AD" class="w3-padding-large" style="width:100%; height:auto;">
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="recruitment">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Bài giảng</h1>
+                <p><strong>Bài giảng hoặc slide bài giảng:</strong> <a
+                        href="https://drive.google.com/file/d/1k89xgahIwCUV2dLRB6wVe7IJRVd56o3E/view?usp=sharing">
+                        https://drive.google.com/file/d/1k89xgahIwCUV2dLRB6wVe7IJRVd56o3E/view?usp=sharing</a>
+                </p>
+                <p><strong>Tài liệu khác (nếu có):</strong> Không</p>
+            </div>
+        </div>
+
+
+        <footer id="myFooter">
+            <!-- Phần thông tin liên hệ và điều hướng -->
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+                <div class="w3-row-padding">
+                    <!-- Cột 1: Thông tin liên hệ -->
+                    <div class="w3-third">
+                        <h4>Thông tin liên hệ</h4>
+                        <p><i class="fa fa-map-marker"></i> Đại học Bách Khoa Hà Nội</p>
+                        <p><i class="fa fa-phone"></i> +84 793 206 191</p>
+                        <p><i class="fa fa-envelope"></i> lam.lb215073@sis.hust.edu.vn</p>
+                    </div>
+
+                    <!-- Cột 2: Liên kết nhanh -->
+                    <div class="w3-third">
+                        <h4>Liên kết nhanh</h4>
+                        <ul class="w3-ul">
+                            <li><a href="https://www.facebook.com/lelam2411">Về chúng tôi</a></li>
+                            <li><a href="https://www.facebook.com/lelam2411">Dịch vụ</a></li>
+                            <li><a href="https://www.facebook.com/lelam2411">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Cột 3: Mạng xã hội -->
+                    <div class="w3-third">
+                        <h4>Kết nối với chúng tôi</h4>
+                        <a href="https://www.facebook.com/lelam2411" class="w3-button w3-light-grey w3-margin-right"><i
+                                class="fa fa-facebook"></i> Facebook</a>
+                        <a href="https://github.com/IchiLamlb" class="w3-button w3-light-grey w3-margin-right"><i
+                                class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Link credits -->
+            <div class="w3-container w3-theme-l1 w3-padding-16 w3-center">
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a></p>
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

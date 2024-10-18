@@ -1,144 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>ORA1</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-html {
-  scroll-behavior: smooth;
-}
-</style>
+  <title>ORA1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="subject.html" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
-    
-  </div>
-</div>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="main.html" class="w3-bar-item w3-button w3-theme-l1">
+        <img src="/ORA1/assets/logo.png" alt="Logo" style="height:25px;">
+      </a>
+      <a href="/ORA1/page/subject.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+      <a href="/ORA1/page/tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
+      <a href="/ORA1/page/cv.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#info">Thông tin khai giảng</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#semina">Semina</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#recruitment">Công ty tuyển dụng</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64" id="info">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Thông tin khai giảng</h1>
-      <p>Ngày khai giảng: 15/09/2024</p>
-      <p>Ngày két thúc khóa học: 31/01/2025</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 
-  <div class="w3-row" id="semina">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Semina</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#info">Thông tin khai giảng</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#semina">Seminar</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#recruitment">Công ty tuyển dụng</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64" id="info">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Thông tin khai giảng</h1>
+        <p><strong>Ngày khai giảng:</strong> 15/09/2024</p>
+        <p><strong>Giờ học:</strong> Tiết 3-6 Chiều thứ 6 </p>
+        <p><strong>Phòng học:</strong> D9 501</p>
+        <p><strong>Ngày két thúc khóa học:</strong> 31/01/2025</p>
+        <p><strong>Giảng viên giảng dạy:</strong> Phạm Huy Hoàng</p>
+        <p><strong>Mã lớp học:</strong> 151904</p>
+        <p><strong>Số lượng sinh viên:</strong> 150</p>
+      </div>
+      <div class="w3-third w3-container">
+        <a href="https://tailieuhust.com/cong-nghe-web-va-dich-vu-truc-tuyen/">
+          <img src="/ORA1/assets/subject.png" alt="AD" class="w3-padding-large" style="width:100%; height:auto;">
+        </a>
+      </div>
     </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+
+    <div class="w3-row" id="semina">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Seminar</h1>
+        <p><strong>Thời gian:</strong> 14h15 ngày 31/10/2024</p>
+        <p><strong>Địa điểm:</strong> Phòng 203 – Nhà B1</p>
+        <p><strong>Người trình bày:</strong> Lê Lâm - Công ty THHH MMT</p>
+        <p><strong>Nội dung: </strong><br> Từ trước đến nay, các ứng dụng web thường được thiết kế và xây dựng theo cùng
+          một mô hình: server tiếp nhận yêu cầu, xử lý logic và trả lại mã HTML cho client – trong đó server thường có
+          kiến trúc monolithic. Theo thời gian, kiến trúc này đã bộc lộ rất nhiều nhược điểm như code base rất lớn, bị
+          trói buộc về công nghệ cho cả hệ thống, không hỗ trợ nhiều loại client khác nhau, gây khó khăn cho việc
+          scaling. Các ứng dụng Web hiện đại đang có xu hướng chuyển sang sử dụng kiến trúc microservice, trong đó hệ
+          thống được chia thành rất nhiều các service nhỏ giao tiếp với nhau qua giao thức HTTP. Mỗi service được coi
+          như một hệ thống độc lập, có thể sử dụng ngôn ngữ lập trình cũng như các công nghệ khác nhau. Kiến trúc này
+          giúp hệ thống trở nên vô cùng linh hoạt trong việc mở rộng cũng như đảm bảo khả năng phục vụ với một lượng
+          truy cập cực lớn. Trong bài trình bày này chúng tôi sẽ chia sẻ những kinh nghiệm thực tế của đội ngũ kỹ thuật
+          MMT trong việc xây dựng các ứng dụng Web theo kiến trúc mới này. </p>
+        <p>MMT đã ứng dụng kiến trúc
+          microservice vào việc xây dựng rất nhiều thành phần trong hệ thống, trong đó nổi bật là hệ thống đánh giá chất
+          lượng dịch vụ thông minh Tech Audit Engine (TAE). Hệ thống này đã giúp loại bỏ hoàn toàn việc phải sử dụng con
+          người trong việc đánh giá chất lượng dịch vụ, tối đa hoá mức độ hài lòng của người dùng. Chúng tôi cũng chia
+          sẻ cách thức xây dựng TAE và demo trực tiếp ứng dụng.</p>
+        <p><strong>Về MMT:</strong><br>MMT là một công ty khởi nghiệp công nghệ tại Thung lũng Silicon. Hiện nay chúng
+          tôi đang xây dựng một nền tảng cung cấp kiến thức dưới dạng dịch vụ (Knowledge as a Service – KaaS) trên phạm
+          vi Toàn cầu. Mỗi người dùng khi gặp vướng mắc về bất cứ vấn đề gì đều có thể gửi câu hỏi của mình lên hệ thống
+          của MMT. Trong vòng vài giây đồng hồ, người học sẽ được kết nối đến một chuyên gia đã được MMT kiểm định
+          chất lượng và MMT bảo đảm rằng người học sẽ nhận được câu trả lời phù hợp trong vòng 10 phút. MMT được
+          sáng lập và điều hành bởi TS. Trần Việt Hùng, cựu sinh viên Công nghệ Thông tin K42 ĐHBK Hà nội. Công ty có
+          một bộ phận kỹ thuật ở Việt nam với rất nhiều kỹ sư phần mềm là các cựu sinh viên ĐHBK.</p>
+      </div>
+      <div class="w3-third w3-container">
+        <a href="https://soict.hust.edu.vn/seminar-thang-9-2024-truong-cntttt.html">
+          <img src="/ORA1/assets/Seminar.jpeg" alt="AD" class="w3-padding-large" style="width:100%; height:auto;">
+        </a>
+        <a href="https://soict.hust.edu.vn/seminar-thang-4-2024-truong-cntttt.html">
+          <img src="/ORA1/assets/Seminar2.jpg" alt="AD" class="w3-padding-large" style="width:100%; height:auto;">
+        </a>
+      </div>
+
     </div>
+
+    <div class="w3-row w3-padding-64" id="recruitment">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Công ty tuyển dụng</h1>
+        <div class="experience-entry">
+          <div class="w3-row experience">
+            <div class="w3-col s12 m3 l3 date">
+              <p>09/2021<br>
+                <strong>Viettel</strong><br>
+              </p>
+            </div>
+            <div class="w3-col s12 m9 l9 content">
+              <ul>
+                <li>Fullstack Engineer</li>
+                <li>AI Engineer</li>
+                <li>Network Engineer</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w3-row experience">
+            <div class="w3-col s12 m3 l3 date">
+              <p>06/2024<br>
+                <strong>FPT</strong><br>
+              </p>
+            </div>
+            <div class="w3-col s12 m9 l9 content">
+              <ul>
+                <li>IT Helpdesk</li>
+                <li>IT BrSe</li>
+                <li>IT BA</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w3-row experience">
+            <div class="w3-col s12 m3 l3 date">
+              <p>09/2024<br>
+                <strong>VNPT</strong><br>
+              </p>
+            </div>
+            <div class="w3-col s12 m9 l9 content">
+              <ul>
+                <li>Lập trình viên NodeJS</li>
+                <li>Kỹ sư vô tuyến</li>
+                <li>Kỹ sư AI</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w3-row experience">
+            <div class="w3-col s12 m3 l3 date">
+              <p>06/2024<br>
+                <strong>FaceNet</strong><br>
+              </p>
+            </div>
+            <div class="w3-col s12 m9 l9 content">
+              <ul>
+                <li>Lập trình viên game mobile</li>
+                <li>Softwear Tester</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w3-row experience">
+            <div class="w3-col s12 m3 l3 date">
+              <p>06/2024<br>
+                <strong>VBee</strong><br>
+              </p>
+            </div>
+            <div class="w3-col s12 m9 l9 content">
+              <ul>
+                <li>Angular Developer</li>
+                <li>Java Spring Developer</li>
+                <li>Ruby Senior</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <a href="https://www.topcv.vn/tim-viec-lam-viettel">
+          <img src="/ORA1/assets/job.jpg" alt="AD" class="w3-padding-large" style="width:100%; height:auto;">
+        </a>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a class="w3-button w3-black" href="#">1</a>
+        <a class="w3-button w3-hover-black" href="#">2</a>
+        <a class="w3-button w3-hover-black" href="#">3</a>
+        <a class="w3-button w3-hover-black" href="#">4</a>
+        <a class="w3-button w3-hover-black" href="#">5</a>
+        <a class="w3-button w3-hover-black" href="#">»</a>
+      </div>
+    </div>
+
+    <footer id="myFooter">
+      <!-- Phần thông tin liên hệ và điều hướng -->
+      <div class="w3-container w3-theme-l2 w3-padding-32">
+        <div class="w3-row-padding">
+          <!-- Cột 1: Thông tin liên hệ -->
+          <div class="w3-third">
+            <h4>Thông tin liên hệ</h4>
+            <p><i class="fa fa-map-marker"></i> Đại học Bách Khoa Hà Nội</p>
+            <p><i class="fa fa-phone"></i> +84 793 206 191</p>
+            <p><i class="fa fa-envelope"></i> lam.lb215073@sis.hust.edu.vn</p>
+          </div>
+
+          <!-- Cột 2: Liên kết nhanh -->
+          <div class="w3-third">
+            <h4>Liên kết nhanh</h4>
+            <ul class="w3-ul">
+              <li><a href="https://www.facebook.com/lelam2411">Về chúng tôi</a></li>
+              <li><a href="https://www.facebook.com/lelam2411">Dịch vụ</a></li>
+              <li><a href="https://www.facebook.com/lelam2411">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Mạng xã hội -->
+          <div class="w3-third">
+            <h4>Kết nối với chúng tôi</h4>
+            <a href="https://www.facebook.com/lelam2411" class="w3-button w3-light-grey w3-margin-right"><i
+                class="fa fa-facebook"></i> Facebook</a>
+            <a href="https://github.com/IchiLamlb" class="w3-button w3-light-grey w3-margin-right"><i
+                class="fa fa-github"></i> Github</a>
+          </div>
+        </div>
+      </div>
+      <!-- Link credits -->
+      <div class="w3-container w3-theme-l1 w3-padding-16 w3-center">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a></p>
+      </div>
+    </footer>
+
+    <!-- END MAIN -->
   </div>
 
-  <div class="w3-row w3-padding-64" id="recruitment">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Công ty tuyển dụng</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
-    </div>
-  </div>
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
 
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
-    </div>
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
 
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
 
 </body>
+
 </html>
