@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wiki Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .search-container {
+            margin: 50px auto;
+            max-width: 600px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        .results {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .result {
+            padding: 10px;
+            background: #fff;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .result a {
+            text-decoration: none;
+            color: #0078d4;
+            font-size: 18px;
+        }
+
+        .result a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-container">
+        <h1>Wikipedia Search</h1>
+        <input type="text" id="searchInput" placeholder="Enter search term...">
+        <button onclick="searchWiki()">Search</button>
+        <div class="results" id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
